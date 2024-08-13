@@ -15,16 +15,24 @@
 </head>
 <body>
 
-    <header class="header-mobile">
+    <header>
         <img src="./assets/images/logo.svg" alt="Logo do site de notícias W.">
         <button>
             <img src="./assets/images/icon-menu.svg" alt="icone do menu hamburguer">
         </button>
 
-        <nav>
+        <nav class="mobile">
             <button>
                 <img src="./assets/images/icon-menu-close.svg" alt="ícone para fechar o menu">
             </button>
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
+        <nav class="desktop">
             <a href="#">Home</a>
             <a href="#">Novo</a>
             <a href="#">Popular</a>
@@ -35,7 +43,10 @@
 
     <main>
         <section class="primeira-secao">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+            <picture>
+                <source media="(min-width: 700px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img src="./assets/images/image-web-3-mobile.jpg" alt="icone de puzzle colorido">
+            </picture>           
             <h1>O futuro brilhante da web 3.0</h1>
             <p>A Web 3.0 pretende criar uma experiência mais inteligente na web, mais personalizada e também é concebida para possibilitar serviços mais avançados, melhor interoperabilidade de dados e maior controle do usuário sobre dados pessoais.</p>
             <button>Ler Mais</button>
